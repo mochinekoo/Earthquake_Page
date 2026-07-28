@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+}
+
+.earthquakeInfo_box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: aliceblue;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.earthquakeInfo_title {
+    font-family: system-ui;
+    font-weight: 1000;
+}
+
+.earthquakeInfo_value {
+    font-family: system-ui;
+    font-weight: 500;
+}

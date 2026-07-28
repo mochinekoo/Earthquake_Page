@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style/index.css">
         <title>地震情報</title>
         <style></style>
         <script></script>
@@ -10,10 +10,20 @@
     <body>
         <script type="module" src="./script/main.js"></script>
 
-        <div>震源：</div><div id="nameText">○○</div>
-        <div>深さ：</div><div id="depthText">○km</div> <br>
-        <div>緯度：</div><div id="latitudeText">○○</div> <br>
-        <div>軽度：</div><div id="longitudeText">○○</div> <br>
-        <div>マグニチュード：</div><div id="magnitudeText">○○</div> <br>
+        <div style="font-family: system-ui; font-weight: bold; font-size: 30px;">
+            地震情報 <br>
+            取得元：P2P地震情報様
+        </div>
+
+        <div class="earthquakeInfo_box">
+            <div class="earthquakeInfo_text">発生時刻： <span class="earthquakeInfo_value" id="timeText">hh:mm:ss</span> </div>
+            <div class="earthquakeInfo_text">震源： <span class="earthquakeInfo_value" id="nameText">○○</span> </div>
+            <div class="earthquakeInfo_text">深さ： <span class="earthquakeInfo_value" id="depthText">○km</span> </div>
+            <div class="earthquakeInfo_text">緯度： <span class="earthquakeInfo_value" id="latitudeText">○○</span> </div>
+            <div class="earthquakeInfo_text">経度： <span class="earthquakeInfo_value" id="longitudeText">○○</span></div>
+            <div class="earthquakeInfo_text">マグニチュード： <span class="earthquakeInfo_value" id="magnitudeText">○○</span> </div>
+            <div class="earthquakeInfo_text">津波の有無： <span class="earthquakeInfo_value" id="tsunamiText">○○</span> </div>
+        </div>
+
     </body>
 </html>
